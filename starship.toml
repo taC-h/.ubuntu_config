@@ -1,0 +1,24 @@
+[directory]
+truncation_length = 0
+truncate_to_repo = false
+
+[memory_usage]
+disabled = false
+show_percentage = true
+show_swap = true
+threshold = -1
+symbol = " "
+separator = "/"
+style = "bold dimmed blue"
+
+[time]
+disabled = true
+
+[username]
+format = "[$user]($style)@"
+show_always = true
+
+[hostname]
+format = "[$hostname]($style):"
+trim_at = ""
+ssh_only = false
