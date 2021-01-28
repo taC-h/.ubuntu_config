@@ -141,6 +141,10 @@ if type "tokei" > /dev/null 2>&1; then
     alias wc="tokei"
 fi
 
+if type "rg" > /dev/null 2>&1; then
+    alias grep="rg"
+fi
+
 #Rust
 source "$HOME/.cargo/env"
 
