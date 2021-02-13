@@ -1,11 +1,11 @@
 function lnconf () {
-    ln -s $1 "$HOME/$1"
+    ln -s "$HOME/.ubuntu_config/$1" $1
 }
-
+cd $HOME
 
 lnconf .bashrc
 lnconf .tmux.conf
 
 STARSHIP="$HOME/.starship"
 mkdir $STARSHIP
-ln -s starship.toml "$STARSHIP/starhip.toml"
+ln -s "$HOME/.ubuntu_config/starship.toml" "$HOME/starship.toml"
