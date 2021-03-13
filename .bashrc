@@ -163,7 +163,7 @@ export STARSHIP_CONFIG="$HOME/.starship/starship.toml"
 export STARSHIP_CACHE="$HOME/.starship/cache"
 
 #denon
-export PATH="/home/ebi/.deno/bin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
 
 alias cls="clear"
 
