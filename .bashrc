@@ -130,9 +130,9 @@ if type "bat" > /dev/null 2>&1; then
 fi
 
 if type "exa" > /dev/null 2>&1; then
-alias ls="exa"
-alias ll='exa -ahlF --git'
-alias tree="exa -T"
+    alias ls="exa"
+    alias ll='exa -ahlF --git'
+    alias tree="exa -T"
 else
     lsalias
 fi
@@ -161,3 +161,15 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(starship init bash)"
 export STARSHIP_CONFIG="$HOME/.starship/starship.toml"
 export STARSHIP_CACHE="$HOME/.starship/cache"
+
+#denon
+export PATH="/home/ebi/.deno/bin:$PATH"
+
+alias cls="clear"
+
+alias dc="docker-compose"
+
+#python venv
+pyact() {
+    source "`pwd`/venv/bin/activate"
+}
