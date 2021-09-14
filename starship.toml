@@ -22,3 +22,6 @@ show_always = true
 format = "[$hostname]($style):"
 trim_at = ""
 ssh_only = false
+
+[character]
+error_symbol = "[❯](red)"

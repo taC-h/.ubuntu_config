@@ -173,3 +173,16 @@ alias dc="docker-compose"
 pyact() {
     source "`pwd`/venv/bin/activate"
 }
+
+#julia
+export PATH="$HOME/.juliavm/bin:$PATH"
+alias je="julia -e"
+
+alias jupyter="$HOME/.julia/conda/3/bin/jupyter"
+
+dluz() {
+    curl -sSf $1 | tar -xzv -C $2
+}
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ebi/.sdkman"
+[[ -s "/home/ebi/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ebi/.sdkman/bin/sdkman-init.sh"
